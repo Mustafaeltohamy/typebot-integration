@@ -91,6 +91,21 @@ This project completes the Integration Engineer assignment for Typebot integrati
 
 ### Step-by-Step Instructions
 *** Note: Please check bot_list in views.py and uncomment the code to fetch the data from the real data from typebot ***
+### Typebot installation (Optional):
+    - git clone https://github.com/baptisteArno/typebot.io.git
+    - cd cd typebot.io
+    - npm install
+    - npm run dev
+### Typebot Configuration
+**Configure webhook in Typebot:**
+    - Go to your bot settings
+    - Add webhook URL: http://localhost:8000/webhook/typebot/
+    - Configure to trigger on session events
+**Typebot data fetch :**
+    - edit typebot-integration/integration_engineer/typebot_app/views.py on in bot_list
+    - Remove the mocked bot data
+    - Uncomment the Typebot API integration code
+
 1. **clone or download the project:**
    git clone https://github.com/Mustafaeltohamy/typebot-integration.git
    cd typebot-integration/integration_engineer

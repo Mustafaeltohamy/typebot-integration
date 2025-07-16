@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>Login</h2>
+    
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+    
+    <form method="post">
+        {% csrf_token %}
+        <div style="margin-bottom: 15px;">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required style="width: 100%; padding: 8px;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 8px;">
+        </div>
+        
+        <button type="submit" class="btn">Login</button>
+    </form>
+    
+    <div style="margin-top: 15px;">
+        <p><strong>Demo Credentials:</strong> demo / demopassword</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>Embedded Bot: {{ bot_id }}</h2>
+    <a href="{% url 'bot_list' %}" class="btn">Back to Bot List</a>
+    
+    <div style="margin-top: 20px; height: 600px; border: 1px solid #ddd; border-radius: 8px;">
+        <iframe 
+            src="{{ bot_url }}"
+            style="width: 100%; height: 100%; border: none; border-radius: 8px;"
+            title="Typebot Chat"
+        ></iframe>
+    </div>
+</div>
+{% endblock %}

@@ -90,11 +90,11 @@ This project completes the Integration Engineer assignment for Typebot integrati
 - Requests
 
 ### Step-by-Step Instructions
-
+*** Note: Please check bot_list in views.py and uncomment the code to fetch the data from the real data from typebot ***
 1. **clone or download the project:**
    git clone https://github.com/Mustafaeltohamy/typebot-integration.git
    cd typebot-integration/integration_engineer
-   
+
 2. **Set up virtual environment**:
 
     # Linux/Mac
